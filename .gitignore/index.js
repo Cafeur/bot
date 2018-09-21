@@ -1,20 +1,11 @@
 const Discord = require('discord.js');
 const low = require('lowdb')
 const FileSync = require ('lowdb/adapters/FileSync')
-const express = require('express');
-const app = express();
 
 const adapter = new FileSync('database.json')
 const db = low(adapter)
 
 db.defaults({ histoires: [], xp: []}).write()
-
-//DEBUT PARAMETRE HEROKU
-app.set('port', (process.env.PORT || 5000))
-
-app.listen(app.get('port'), function(){
-    console.log(`Bot en fonctionnement sur le port ${app.get('port')}`)
-})
 
 var bot = new Discord.Client();
 var prefix = ("/")
