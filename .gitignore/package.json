@@ -1,7 +1,7 @@
 {
   "name": "cafeur-bot",
   "version": "1.0.0",
-  "description": "blabla",
+  "description": "Bot discord",
   "main": "main.js",
   "dependencies": {
     "discord.js": "^11.3.2",
@@ -15,6 +15,6 @@
   "keywords": [
     "blabla"
   ],
-  "author": "cafeur",
+  "author": "Cafeur",
   "license": "ISC"
 }
